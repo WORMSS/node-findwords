@@ -1,7 +1,7 @@
 {
   "name": "@wormss/findwords",
-  "version": "1.0.0",
-  "description": "Search all words",
+  "version": "1.0.2",
+  "description": "Search all words using regex",
   "main": "app/findwords.js",
   "bin": {
     "findwords": "app/bin.js"
@@ -9,9 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "wormss <wormssmail@gmail.com> (http://wormss.github.com/)",
+  "author": "Colin Richardson <wormssmail@gmail.com> (http://wormss.github.com/)",
   "license": "MIT",
-  "dependencies": {
-    
-  }
+  "dependencies": {}
 }
