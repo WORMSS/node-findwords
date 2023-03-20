@@ -1,6 +1,6 @@
 {
   "name": "@wormss/findwords",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Search all words using regex",
   "main": "./dist/findwords.cjs",
   "module": "./dist/findwords.js",
