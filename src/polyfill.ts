@@ -1,40 +1,4 @@
-#!/usr/bin/env node
-polyfill();
-
-var findwords = require('./findwords');
-var { EOL } = require('os');
-
-var results = findwords(process.argv[2]);
-var longest = 0;
-if (process.stdout.isTTY) {
-  for (var i = 0; i < results.length; i++) {
-    var len = results[i].length + 1;
-    if (len > longest) {
-      longest = len;
-    }
-  }
-  var columns = Math.floor(process.stdout.columns / longest);
-  var columns_exact = process.stdout.columns % longest === 0;
-  for (i = 0; i < results.length; i++) {
-    process.stdout.write(padd(results[i], longest));
-    if (!columns_exact)
-      if (i % columns === 0 && i !== 0) {
-        process.stdout.write(EOL);
-      }
-  }
-  console.log('\n' + results.length);
-} else {
-  for (const word of results) {
-    process.stdout.write(word);
-    process.stdout.write(EOL);
-  }
-}
-
-function padd(word, size) {
-  return ' '.repeat(longest - word.length) + word;
-}
-
-function polyfill() {
+export function polyfill() {
   if (!String.prototype.repeat) {
     String.prototype.repeat = function(count) {
       'use strict';

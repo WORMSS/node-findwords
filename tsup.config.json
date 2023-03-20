@@ -1,0 +1,9 @@
+{
+  "entry": ["./src/findwords.ts", "./src/bin.ts"],
+  "format": ["cjs", "esm"],
+  "dts": true,
+  "shims": true,
+  "clean": true,
+  "platform": "node",
+  "publicDir": true
+}
