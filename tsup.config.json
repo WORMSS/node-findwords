@@ -1,7 +1,8 @@
 {
-  "entry": ["./src/findwords.ts", "./src/bin.ts"],
+  "name": "Findwords",
+  "entry": ["./src/index.ts", "./src/bin.ts"],
   "format": ["cjs", "esm"],
-  "dts": true,
+  "dts": "./src/index.ts",
   "shims": true,
   "clean": true,
   "platform": "node",

@@ -2,7 +2,7 @@
 
 import { polyfill } from './polyfill';
 import { EOL } from 'node:os';
-import { findwords } from './findwords';
+import { findwords } from './index';
 
 polyfill();
 

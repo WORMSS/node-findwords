@@ -46,7 +46,7 @@ function polyfill() {
 // src/bin.ts
 var import_node_os = require("os");
 
-// src/findwords.ts
+// src/index.ts
 var import_node_fs = require("fs");
 var import_node_path = require("path");
 var words;

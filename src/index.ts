@@ -18,5 +18,3 @@ export function findwords(pattern: string, wordsList?: string) {
   }
   return wordsList.match(new RegExp('^' + pattern + '$', 'img')) || [];
 }
-
-export default findwords;

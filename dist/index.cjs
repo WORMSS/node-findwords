@@ -17,13 +17,12 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/findwords.ts
-var findwords_exports = {};
-__export(findwords_exports, {
-  default: () => findwords_default,
+// src/index.ts
+var src_exports = {};
+__export(src_exports, {
   findwords: () => findwords
 });
-module.exports = __toCommonJS(findwords_exports);
+module.exports = __toCommonJS(src_exports);
 var import_node_fs = require("fs");
 var import_node_path = require("path");
 var words;
@@ -41,7 +40,6 @@ function findwords(pattern, wordsList) {
   }
   return wordsList.match(new RegExp("^" + pattern + "$", "img")) || [];
 }
-var findwords_default = findwords;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   findwords

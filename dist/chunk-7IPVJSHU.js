@@ -5,7 +5,7 @@ var getFilename = () => fileURLToPath(import.meta.url);
 var getDirname = () => path.dirname(getFilename());
 var __dirname = /* @__PURE__ */ getDirname();
 
-// src/findwords.ts
+// src/index.ts
 import { readFileSync } from "fs";
 import { join } from "path";
 var words;
@@ -23,9 +23,7 @@ function findwords(pattern, wordsList) {
   }
   return wordsList.match(new RegExp("^" + pattern + "$", "img")) || [];
 }
-var findwords_default = findwords;
 
 export {
-  findwords,
-  findwords_default
+  findwords
 };

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   findwords
-} from "./chunk-7LLYILYO.js";
+} from "./chunk-7IPVJSHU.js";
 
 // src/polyfill.ts
 function polyfill() {
