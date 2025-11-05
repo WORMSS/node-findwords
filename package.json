@@ -16,9 +16,9 @@
   "author": "Colin Richardson <wormssmail@gmail.com> (http://wormss.github.com/)",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "latest",
-    "tsup": "latest",
-    "typescript": "latest"
+    "@types/node": "^24.10.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   },
   "files": [
     "dist/**",
