@@ -9,12 +9,12 @@ function init() {
   }
 }
 
-export function findwords(pattern: string, wordsList?: string) {
+export function findwords(pattern: string, wordsList?: string): RegExpMatchArray {
   if (!wordsList) {
     init();
     wordsList = words;
   } else if (Array.isArray(wordsList)) {
     wordsList = wordsList.join('\n');
   }
-  return wordsList.match(new RegExp('^' + pattern + '$', 'img')) || [];
+  return wordsList.match(new RegExp('^' + pattern + '$', 'img')) ?? [''];
 }
