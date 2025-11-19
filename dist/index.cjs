@@ -38,7 +38,7 @@ function findwords(pattern, wordsList) {
   } else if (Array.isArray(wordsList)) {
     wordsList = wordsList.join("\n");
   }
-  return wordsList.match(new RegExp("^" + pattern + "$", "img")) || [];
+  return wordsList.match(new RegExp("^" + pattern + "$", "img")) ?? [""];
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

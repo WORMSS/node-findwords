@@ -1,6 +1,6 @@
 import {
   findwords
-} from "./chunk-GQ3QQYHL.js";
+} from "./chunk-46BNBPIY.js";
 export {
   findwords
 };
